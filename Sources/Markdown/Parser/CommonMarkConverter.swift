@@ -56,6 +56,7 @@ fileprivate enum CommonMarkNodeType: String {
     case image
     case none = "NONE"
     case unknown = "<unknown>"
+    case attribute
 
     // Extensions
 
@@ -607,4 +608,3 @@ struct MarkupParser {
         return makeMarkup(data) as! Document
     }
 }
-
